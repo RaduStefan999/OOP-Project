@@ -1,0 +1,33 @@
+1. Sa se realizeze o clasa Lista simplu inlantuita 
+care implementeaza operatii pentru o lista liniara 
+simplu inlantuita de numere naturale, alocata dinamic.
+
+Clasa contine:
+	- date membre private: adresa primului si adresa ultimului nod din lista
+
+
+- metode publice:
+	- constructor implicit, constructor de copiere, destructor.
+
+	- crearea listei, formata din toate numerele citite din fisierul LISTA.IN
+
+	- afisarea listei create in fisierul LISTA.OUT
+
+	- eliminarea unui numar dat din lista creata
+
+	- supraincarcarea operatorului - pentru crearea unei noi liste, obtinuta din doua
+liste l1 si l2, dupa eliminarea din l2 a numerelor ce apartin listei 1
+
+	- supraincarcarea operatorului + pentru crearea unei noi liste, obtinuta din doua
+liste l1 si l2, ce va contine numerele comune din aceste liste
+
+	- inserarea unui numar dat in lista, dupa fiecare numar par din lista initiala
+
+	- inserarea maximului din lista initiala inaintea fiecarui palindrom din lista
+
+	- eliminarea numarului minim din lista
+
+	- cautarea unui numar in lista si afisarea numarului sau de aparitii
+
+2. Sa se scrie un program C++ care defineste obiecte de tipul definit prin clasa
+anterioara si care apeleaza toate metodele clasei prin selectia lor dintr-un meniu.

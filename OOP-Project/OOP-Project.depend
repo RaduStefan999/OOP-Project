@@ -1,11 +1,24 @@
 # depslib dependency file v1.0
-1556754286 source:d:\work\oop-project\main.cpp
+1556758268 source:d:\work\oop-project\main.cpp
 	<iostream>
 	<lista_operator.h>
+	<screen_messages.h>
 
-1556754075 source:d:\work\oop-project\src\lista_operator.cpp
+1556755365 source:d:\work\oop-project\src\lista_operator.cpp
 	"lista_operator.h"
 
 1556754660 d:\work\oop-project\include\lista_operator.h
 	<fstream>
+
+1556756447 source:d:\work\oop-project\src\messages.cpp
+	"messages.h"
+
+1556757185 d:\work\oop-project\include\messages.h
+	<string>
+
+1556757662 source:d:\work\oop-project\src\screen_messages.cpp
+	"screen_messages.h"
+
+1556757378 d:\work\oop-project\include\screen_messages.h
+	<string>
 

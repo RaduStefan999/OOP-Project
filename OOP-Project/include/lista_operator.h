@@ -15,6 +15,11 @@ class lista_operator {
         //Destructor
         ~lista_operator();
 
+        //Read_list
+        void read_list();
+        //Output_list
+        void output_list();
+
 
 
 
@@ -25,7 +30,7 @@ class lista_operator {
             nod *urm;
         };
 
-        nod primul, ultimul;
+        nod  *primul, *ultimul;
 
 };
 

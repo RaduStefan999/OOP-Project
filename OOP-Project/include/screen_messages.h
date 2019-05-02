@@ -12,14 +12,14 @@ class screen_messages {
         screen_messages();
         //Destructor
         ~screen_messages();
+
         //String constants
         string description;
         string comenzi;
 
         string comanda1;
         string comanda2;
-        string comanda3;
-        string comanda4;
+        string exit;
 
         string invitation;
 };

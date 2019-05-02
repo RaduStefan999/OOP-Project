@@ -11,6 +11,8 @@ using namespace std;
 void menu_display ();
 void menu_action ();
 
+int get_integer (char *c);
+
 lista_operator listmanager;
 screen_messages menu;
 
@@ -45,11 +47,14 @@ void menu_action () {
                 return;
             }
             else {
-                if (strcmp(fn, "1") == 0) {
+                int functie = get_integer(fn);
+                int argument = get_integer(arg);
+
+                if (functie == 1) {
                     listmanager.read_list();
                 }
                 else {
-                    if (strcmp(fn, "2") == 0) {
+                    if (functie == 2) {
                         listmanager.output_list();
                     }
                 }
@@ -57,4 +62,23 @@ void menu_action () {
         }
         cout << menu.invitation;
     }
+}
+
+int get_integer (char *c) {
+    int x = 0;
+
+    if (c == NULL) {
+        return 0;
+    }
+
+    for (int i = 0; i < strlen(c); i++) {
+        if (isdigit(c[i])) {
+            x = x*10 + int(c[i] - '0');
+        }
+        else {
+            return 0;
+        }
+    }
+
+    return x;
 }

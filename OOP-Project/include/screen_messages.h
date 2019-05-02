@@ -13,9 +13,15 @@ class screen_messages {
         //Destructor
         ~screen_messages();
         //String constants
-        string text1;
-        string text2;
-        string text3;
+        string description;
+        string comenzi;
+
+        string comanda1;
+        string comanda2;
+        string comanda3;
+        string comanda4;
+
+        string invitation;
 };
 
 #endif // MESSAGES_H

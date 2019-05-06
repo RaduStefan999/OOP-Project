@@ -26,6 +26,8 @@ class lista_operator {
         void insertpar_list(int);
         //Insert after palindrom from list
         void insertpalindrom_list();
+        //Delete minim from list
+        void deleteminim_list();
 
 
 
@@ -41,6 +43,7 @@ class lista_operator {
 
         //Help functions
         int getmaxim();
+        int getminim();
         bool checkpalindrom(int);
 
 };

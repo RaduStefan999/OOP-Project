@@ -134,6 +134,43 @@ void lista_operator::insertpalindrom_list() {
 
 }
 
+void lista_operator::deleteminim_list() {
+    int x = getminim();
+    nod *curent = primul;
+    nod *predecesor;
+
+    while (curent != NULL) {
+
+        if (curent->data == x) {
+            if (curent == primul) {
+                curent = curent->urm;
+                delete(primul);
+                primul = curent;
+            }
+            else {
+                if (curent == ultimul) {
+                    predecesor->urm = NULL;
+                    delete(ultimul);
+                    ultimul = predecesor;
+                    curent = ultimul;
+                }
+                else {
+                    predecesor->urm = curent->urm;
+                    delete(curent);
+                    curent = predecesor->urm;
+                }
+            }
+        }
+        else {
+            predecesor = curent;
+            curent = curent->urm;
+        }
+
+
+    }
+
+
+}
 
 //Private functions
 
@@ -143,6 +180,20 @@ int lista_operator::getmaxim() {
 
     while (curent != NULL) {
         if (curent->data > x) {
+            x = curent->data;
+        }
+        curent = curent->urm;
+    }
+
+    return x;
+}
+
+int lista_operator::getminim() {
+    int x = 9999999;
+    nod *curent = primul;
+
+    while (curent != NULL) {
+        if (curent->data < x) {
             x = curent->data;
         }
         curent = curent->urm;

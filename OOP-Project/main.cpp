@@ -35,6 +35,7 @@ void menu_display () {
     cout << menu.comanda3;
     cout << menu.comanda4;
     cout << menu.comanda5;
+    cout << menu.comanda6;
 
     cout << menu.exit;
 }
@@ -71,6 +72,11 @@ void menu_action () {
                             else {
                                 if (functie == 5) {
                                     listmanager.insertpalindrom_list();
+                                }
+                                else {
+                                    if (functie == 6) {
+                                        listmanager.deleteminim_list();
+                                    }
                                 }
                             }
                         }

@@ -24,11 +24,14 @@ class screen_messages {
         string comanda5;
         string comanda6;
         string comanda7;
+        string comanda8;
+        string comanda9;
 
         string returnmesage;
         string exit;
 
         string invitation;
+        string necunoscut;
 };
 
 #endif // MESSAGES_H

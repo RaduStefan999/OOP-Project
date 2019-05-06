@@ -42,7 +42,7 @@
 1557136188 source:e:\work\oop-project\oop-project\src\screen_messages.cpp
 	"screen_messages.h"
 
-1557184445 source:d:\work\teza-project\oop-project\main.cpp
+1557186372 source:d:\work\teza-project\oop-project\main.cpp
 	<iostream>
 	<cstring>
 	<lista_operator.h>
@@ -52,12 +52,12 @@
 	<fstream>
 	<iostream>
 
-1557184446 d:\work\teza-project\oop-project\include\screen_messages.h
+1557186385 d:\work\teza-project\oop-project\include\screen_messages.h
 	<string>
 
 1557184200 source:d:\work\teza-project\oop-project\src\lista_operator.cpp
 	"lista_operator.h"
 
-1557184127 source:d:\work\teza-project\oop-project\src\screen_messages.cpp
+1557186712 source:d:\work\teza-project\oop-project\src\screen_messages.cpp
 	"screen_messages.h"
 

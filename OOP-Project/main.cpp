@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstring>
+#include <stdlib.h>
 
 #include <lista_operator.h>
 #include <screen_messages.h>
@@ -12,6 +13,9 @@ void menu_display ();
 void menu_action ();
 
 int get_integer (char *c);
+
+void apelare_supraincarcare1();
+void apelare_supraincarcare2();
 
 lista_operator listmanager;
 screen_messages menu;
@@ -27,6 +31,10 @@ int main()
 }
 
 void menu_display () {
+
+    //schimb culoarea
+    system("COLOR 1F");
+
     cout << menu.description;
     cout << menu.comenzi;
 
@@ -37,6 +45,8 @@ void menu_display () {
     cout << menu.comanda5;
     cout << menu.comanda6;
     cout << menu.comanda7;
+    cout << menu.comanda8;
+    cout << menu.comanda9;
 
     cout << menu.exit;
 }
@@ -82,6 +92,19 @@ void menu_action () {
                                         if (functie == 7) {
                                             cout << menu.returnmesage << listmanager.aparitiinumar_list(argument) << '\n';
                                         }
+                                        else {
+                                            if (functie == 8) {
+                                                apelare_supraincarcare1();
+                                            }
+                                            else {
+                                                if (functie == 9) {
+                                                    apelare_supraincarcare2();
+                                                }
+                                                else {
+                                                    cout << menu.necunoscut;
+                                                }
+                                            }
+                                        }
                                     }
                                 }
                             }
@@ -90,6 +113,7 @@ void menu_action () {
                 }
             }
         }
+
         cout << menu.invitation;
     }
 }
@@ -111,4 +135,12 @@ int get_integer (char *c) {
     }
 
     return x;
+}
+
+void apelare_supraincarcare1() {
+
+}
+
+void apelare_supraincarcare2() {
+
 }

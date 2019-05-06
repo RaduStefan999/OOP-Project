@@ -22,6 +22,8 @@ class lista_operator {
         void output_list();
         //Delete from list
         void deletefrom_list(int x);
+        //Insert after par from list
+        void insertpar_list(int x);
 
 
 

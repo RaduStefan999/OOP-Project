@@ -82,3 +82,27 @@ void lista_operator::deletefrom_list(int x) {
 
     }
 }
+
+void lista_operator::insertpar_list(int x) {
+    nod *curent = primul;
+
+    while (curent != NULL) {
+        if (curent->data%2 == 0) {
+            nod *insert_nod = new nod;
+            insert_nod->data = x;
+
+            insert_nod->urm = curent->urm;
+            curent->urm = insert_nod;
+            curent = insert_nod;
+
+            if (curent == ultimul) {
+                ultimul = curent;
+            }
+
+        }
+        else {
+            curent = curent->urm;
+        }
+    }
+
+}

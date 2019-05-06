@@ -11,7 +11,9 @@ screen_messages::screen_messages() {
     comanda4 = "-Inserarea unui numar dat dupa fiecare element par din Lista : 4 numar\n";
     comanda5 = "-Inserarea maximului dupa fiecare element palindrom din Lista : 5\n";
     comanda6 = "-Eliminarea minimului din Lista : 6\n";
+    comanda7 = "-Determina numarul de aparitii al unui numar dat din Lista : 7 numar\n";
 
+    returnmesage = "Aplicatia intoarce : ";
     exit = "-Paraseste aplicatia : exit\n\n";
 
     invitation = "Introduceti comanda (numerica) si argumentul (daca este cazul) >  ";

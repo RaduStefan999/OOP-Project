@@ -36,6 +36,7 @@ void menu_display () {
     cout << menu.comanda4;
     cout << menu.comanda5;
     cout << menu.comanda6;
+    cout << menu.comanda7;
 
     cout << menu.exit;
 }
@@ -76,6 +77,11 @@ void menu_action () {
                                 else {
                                     if (functie == 6) {
                                         listmanager.deleteminim_list();
+                                    }
+                                    else {
+                                        if (functie == 7) {
+                                            cout << menu.returnmesage << listmanager.aparitiinumar_list(argument) << '\n';
+                                        }
                                     }
                                 }
                             }

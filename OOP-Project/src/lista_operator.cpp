@@ -172,6 +172,22 @@ void lista_operator::deleteminim_list() {
 
 }
 
+int lista_operator::aparitiinumar_list(int x) {
+    int nr_aparitii = 0;
+    nod *curent = primul;
+
+    while (curent != NULL) {
+        if (curent->data == x) {
+            nr_aparitii++;
+        }
+        curent = curent->urm;
+    }
+
+    return nr_aparitii;
+}
+
+
+
 //Private functions
 
 int lista_operator::getmaxim() {

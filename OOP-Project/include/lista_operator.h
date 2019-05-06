@@ -28,6 +28,8 @@ class lista_operator {
         void insertpalindrom_list();
         //Delete minim from list
         void deleteminim_list();
+        //Find number of aparitions from list
+        int aparitiinumar_list(int);
 
 
 

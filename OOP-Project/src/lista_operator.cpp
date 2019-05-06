@@ -48,3 +48,37 @@ void lista_operator::output_list() {
         curent = curent->urm;
     }
 }
+
+void lista_operator::deletefrom_list(int x) {
+    nod *curent = primul;
+    nod *predecesor;
+    while (curent != NULL) {
+
+        if (curent->data == x) {
+            if (curent == primul) {
+                curent = curent->urm;
+                delete(primul);
+                primul = curent;
+            }
+            else {
+                if (curent == ultimul) {
+                    predecesor->urm = NULL;
+                    delete(ultimul);
+                    ultimul = predecesor;
+                    curent = ultimul;
+                }
+                else {
+                    predecesor->urm = curent->urm;
+                    delete(curent);
+                    curent = predecesor->urm;
+                }
+            }
+        }
+        else {
+            predecesor = curent;
+            curent = curent->urm;
+        }
+
+
+    }
+}

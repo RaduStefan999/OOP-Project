@@ -7,9 +7,11 @@ screen_messages::screen_messages() {
 
     comanda1 = "-Citeste Lista din fisier : 1\n";
     comanda2 = "-Afiseaza Lista in fisier : 2\n";
+    comanda3 = "-Elimina un numar dat din Lista : 3 numar\n";
+
     exit = "-Paraseste aplicatia : exit\n\n";
 
-    invitation = "Introduceti comanda (numerica) si argumentu (daca este cazul) >  ";
+    invitation = "Introduceti comanda (numerica) si argumentul (daca este cazul) >  ";
 
 }
 

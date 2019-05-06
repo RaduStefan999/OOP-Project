@@ -32,6 +32,7 @@ void menu_display () {
 
     cout << menu.comanda1;
     cout << menu.comanda2;
+    cout << menu.comanda3;
 
     cout << menu.exit;
 }
@@ -56,6 +57,11 @@ void menu_action () {
                 else {
                     if (functie == 2) {
                         listmanager.output_list();
+                    }
+                    else {
+                        if (functie == 3) {
+                            listmanager.deletefrom_list(argument);
+                        }
                     }
                 }
             }

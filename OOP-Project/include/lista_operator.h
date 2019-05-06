@@ -1,4 +1,5 @@
 #include <fstream>
+#include <iostream>
 
 using namespace std;
 
@@ -19,6 +20,8 @@ class lista_operator {
         void read_list();
         //Output_list
         void output_list();
+        //Delete from list
+        void deletefrom_list(int x);
 
 
 

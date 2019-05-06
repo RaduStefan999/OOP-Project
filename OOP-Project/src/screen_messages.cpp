@@ -9,6 +9,7 @@ screen_messages::screen_messages() {
     comanda2 = "-Afiseaza Lista in fisier : 2\n";
     comanda3 = "-Elimina un numar dat din Lista : 3 numar\n";
     comanda4 = "-Inserarea unui numar dat dupa fiecare element par din Lista : 4 numar\n";
+    comanda5 = "-Inserarea maximului dupa fiecare element palindrom din Lista : 5\n";
 
     exit = "-Paraseste aplicatia : exit\n\n";
 

@@ -20,6 +20,8 @@ lista_operator::~lista_operator() {
     //Destructor
 }
 
+//Public functions
+
 void lista_operator::read_list() {
     int x = 0;
     while (fin >> x) {
@@ -105,4 +107,64 @@ void lista_operator::insertpar_list(int x) {
         }
     }
 
+}
+
+void lista_operator::insertpalindrom_list() {
+    int x = getmaxim();
+    nod *curent = primul;
+
+    while (curent != NULL) {
+        if (checkpalindrom(curent->data)) {
+            nod *insert_nod = new nod;
+            insert_nod->data = x;
+
+            insert_nod->urm = curent->urm;
+            curent->urm = insert_nod;
+            curent = insert_nod;
+
+            if (curent == ultimul) {
+                ultimul = curent;
+            }
+
+        }
+        else {
+            curent = curent->urm;
+        }
+    }
+
+}
+
+
+//Private functions
+
+int lista_operator::getmaxim() {
+    int x = -9999999;
+    nod *curent = primul;
+
+    while (curent != NULL) {
+        if (curent->data > x) {
+            x = curent->data;
+        }
+        curent = curent->urm;
+    }
+
+    return x;
+}
+
+bool lista_operator::checkpalindrom(int x) {
+    bool status = 1;
+
+    int dup = x;
+    int ogl = 0;
+
+    while (dup != 0) {
+        ogl = ogl*10 + dup%10;
+        dup = dup/10;
+    }
+
+    if (x != ogl) {
+        status = 0;
+    }
+
+    return status;
 }

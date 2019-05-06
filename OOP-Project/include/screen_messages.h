@@ -21,6 +21,7 @@ class screen_messages {
         string comanda2;
         string comanda3;
         string comanda4;
+        string comanda5;
 
         string exit;
 

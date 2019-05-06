@@ -34,6 +34,7 @@ void menu_display () {
     cout << menu.comanda2;
     cout << menu.comanda3;
     cout << menu.comanda4;
+    cout << menu.comanda5;
 
     cout << menu.exit;
 }
@@ -66,6 +67,11 @@ void menu_action () {
                         else {
                             if (functie == 4) {
                                 listmanager.insertpar_list(argument);
+                            }
+                            else {
+                                if (functie == 5) {
+                                    listmanager.insertpalindrom_list();
+                                }
                             }
                         }
                     }

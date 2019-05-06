@@ -21,9 +21,11 @@ class lista_operator {
         //Output_list
         void output_list();
         //Delete from list
-        void deletefrom_list(int x);
+        void deletefrom_list(int);
         //Insert after par from list
-        void insertpar_list(int x);
+        void insertpar_list(int);
+        //Insert after palindrom from list
+        void insertpalindrom_list();
 
 
 
@@ -36,6 +38,10 @@ class lista_operator {
         };
 
         nod  *primul, *ultimul;
+
+        //Help functions
+        int getmaxim();
+        bool checkpalindrom(int);
 
 };
 

@@ -156,7 +156,7 @@ void apelare_supraincarcare1() {
         cin >> a;
         l2.inserare_individuala(a);
 
-        l3 = listmanager + l2;
+        l3 = listmanager - l2;
         l3.output_list();
     }
 }
@@ -174,7 +174,7 @@ void apelare_supraincarcare2() {
         cin >> a;
         l2.inserare_individuala(a);
 
-        l3 = listmanager - l2;
+        l3 = listmanager + l2;
         l3.output_list();
     }
 }

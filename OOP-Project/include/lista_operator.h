@@ -52,6 +52,7 @@ class lista_operator {
         int getmaxim();
         int getminim();
         bool checkpalindrom(int);
+        bool ispartoflist(int);
 
 };
 

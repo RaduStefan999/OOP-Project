@@ -266,3 +266,17 @@ bool lista_operator::checkpalindrom(int x) {
 
     return status;
 }
+
+bool lista_operator::ispartoflist(int x) {
+    bool status = 0;
+    nod *curent = primul;
+
+    while (curent != NULL) {
+        if (curent->data == x) {
+            status = 1;
+        }
+        curent = curent->urm;
+    }
+
+    return status;
+}

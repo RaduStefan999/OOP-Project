@@ -20,7 +20,38 @@ lista_operator::~lista_operator() {
     //Destructor
 }
 
+lista_operator lista_operator::operator + (const lista_operator& l2) {
+    //Operator +
+    lista_operator l3;
+
+    return l3;
+}
+
+lista_operator lista_operator::operator - (const lista_operator& l2) {
+    //Operator -
+    lista_operator l3;
+
+    return l3;
+}
+
 //Public functions
+
+void lista_operator::inserare_individuala(int x) {
+    nod *curent = new nod;
+
+    curent->data = x;
+    curent->urm = NULL;
+
+    if (!primul) {
+        primul = curent;
+    }
+    else {
+        ultimul->urm = curent;
+    }
+
+    ultimul = curent;
+
+}
 
 void lista_operator::read_list() {
     int x = 0;

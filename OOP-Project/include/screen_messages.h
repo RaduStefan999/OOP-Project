@@ -32,6 +32,9 @@ class screen_messages {
 
         string invitation;
         string necunoscut;
+
+        string lista1;
+        string lista2;
 };
 
 #endif // MESSAGES_H

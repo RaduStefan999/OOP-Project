@@ -54,6 +54,9 @@ void menu_display () {
 void menu_action () {
     cout << menu.invitation;
     while (cin.getline(input, NMAX)) {
+        int functie = 0;
+        int argument = 0;
+
         if (strlen(input) > 0) {
             char *fn = strtok(input, " ");
             char *arg = strtok(NULL, " ");
@@ -62,8 +65,8 @@ void menu_action () {
                 return;
             }
             else {
-                int functie = get_integer(fn);
-                int argument = get_integer(arg);
+                functie = get_integer(fn);
+                argument = get_integer(arg);
 
                 if (functie == 1) {
                     listmanager.read_list();
@@ -114,7 +117,10 @@ void menu_action () {
             }
         }
 
-        cout << menu.invitation;
+        if (functie != 8 && functie != 9) {
+            cout << menu.invitation;
+        }
+
     }
 }
 
@@ -138,9 +144,37 @@ int get_integer (char *c) {
 }
 
 void apelare_supraincarcare1() {
+    int n = 0, a = 0;
 
+    lista_operator l2, l3;
+
+    cout << menu.lista1;
+    cin >> n;
+    cout << menu.lista2;
+
+    for (int i = 1;i <= n; i++) {
+        cin >> a;
+        l2.inserare_individuala(a);
+
+        l3 = listmanager + l2;
+        l3.output_list();
+    }
 }
 
 void apelare_supraincarcare2() {
+    int n = 0, a = 0;
 
+    lista_operator l2, l3;
+
+    cout << menu.lista1;
+    cin >> n;
+    cout << menu.lista2;
+
+    for (int i = 1;i <= n; i++) {
+        cin >> a;
+        l2.inserare_individuala(a);
+
+        l3 = listmanager - l2;
+        l3.output_list();
+    }
 }

@@ -15,6 +15,13 @@ class lista_operator {
         lista_operator(const lista_operator &obj);
         //Destructor
         ~lista_operator();
+        //Operator +
+        lista_operator operator + (const lista_operator &l2);
+        //Operator -
+        lista_operator operator - (const lista_operator &l2);
+
+        //Inserare individuala
+        void inserare_individuala(int);
 
         //Read_list
         void read_list();
@@ -30,8 +37,6 @@ class lista_operator {
         void deleteminim_list();
         //Find number of aparitions from list
         int aparitiinumar_list(int);
-
-
 
 
     private:

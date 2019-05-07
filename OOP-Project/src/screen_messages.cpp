@@ -21,6 +21,9 @@ screen_messages::screen_messages() {
     invitation = "Introduceti comanda (numerica) si argumentul (daca este cazul) >  ";
     necunoscut = "Comanda nu a fost recunoscuta de aplicatie\n";
 
+    lista1 = "Introduceti lungimea listei l2\n";
+    lista2 = "Introduceti elementele listei l2\n";
+
 }
 
 

@@ -63,3 +63,20 @@
 1557188598 source:d:\work\teza-project\oop-project\src\screen_messages.cpp
 	"screen_messages.h"
 
+1557609041 source:d:\work\oop-project\oop-project\main.cpp
+	<iostream>
+	<cstring>
+	<stdlib.h>
+	<lista_operator.h>
+	<screen_messages.h>
+
+1557609041 d:\work\oop-project\oop-project\include\lista_operator.h
+	<fstream>
+	<iostream>
+
+1557609041 d:\work\oop-project\oop-project\include\screen_messages.h
+	<string>
+
+1557609041 source:d:\work\oop-project\oop-project\src\screen_messages.cpp
+	"screen_messages.h"
+

@@ -151,7 +151,7 @@ void lista_operator::insertpalindrom_list() {
 
             insert_nod->urm = curent->urm;
             curent->urm = insert_nod;
-            curent = insert_nod;
+            curent = insert_nod->urm;
 
             if (curent == ultimul) {
                 ultimul = curent;

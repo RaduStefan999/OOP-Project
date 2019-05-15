@@ -7,6 +7,9 @@ ofstream fout ("LISTA.out");
 
 lista_operator::lista_operator() {
     //Constructor
+
+    primul = NULL;
+    ultimul = NULL;
 }
 
 lista_operator::lista_operator(const lista_operator &obj) {
@@ -20,19 +23,62 @@ lista_operator::~lista_operator() {
     //Destructor
 }
 
-lista_operator lista_operator::operator + (const lista_operator& l2) {
-    //Operator +
-    lista_operator l3;
-
-    return l3;
-}
-
 lista_operator lista_operator::operator - (const lista_operator& l2) {
     //Operator -
     lista_operator l3;
+    nod *curent_l2 = l2.primul;
+
+    while (curent_l2 != NULL) {
+        if (!(ispartoflist(curent_l2->data))) {
+            nod *curent_l3 = new nod;
+
+            curent_l3->data = curent_l2->data;
+            curent_l3->urm = NULL;
+
+            if (!(l3.primul)) {
+                l3.primul = curent_l3;
+            }
+            else {
+                l3.ultimul->urm = curent_l3;
+            }
+
+            l3.ultimul = curent_l3;
+        }
+
+        curent_l2 = curent_l2->urm;
+    }
 
     return l3;
 }
+
+lista_operator lista_operator::operator + (const lista_operator& l2) {
+    //Operator +
+    lista_operator l3;
+    nod *curent_l2 = l2.primul;
+
+    while (curent_l2 != NULL) {
+        if ((ispartoflist(curent_l2->data))) {
+            nod *curent_l3 = new nod;
+
+            curent_l3->data = curent_l2->data;
+            curent_l3->urm = NULL;
+
+            if (!(l3.primul)) {
+                l3.primul = curent_l3;
+            }
+            else {
+                l3.ultimul->urm = curent_l3;
+            }
+
+            l3.ultimul = curent_l3;
+        }
+
+        curent_l2 = curent_l2->urm;
+    }
+
+    return l3;
+}
+
 
 //Public functions
 

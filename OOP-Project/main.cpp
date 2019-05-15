@@ -145,7 +145,6 @@ int get_integer (char *c) {
 
 void apelare_supraincarcare1() {
     int n = 0, a = 0;
-
     lista_operator l2, l3;
 
     cout << menu.lista1;
@@ -155,15 +154,14 @@ void apelare_supraincarcare1() {
     for (int i = 1;i <= n; i++) {
         cin >> a;
         l2.inserare_individuala(a);
-
-        l3 = listmanager - l2;
-        l3.output_list();
     }
+
+    l3 = listmanager - l2;
+    l3.output_list();
 }
 
 void apelare_supraincarcare2() {
     int n = 0, a = 0;
-
     lista_operator l2, l3;
 
     cout << menu.lista1;
@@ -173,8 +171,8 @@ void apelare_supraincarcare2() {
     for (int i = 1;i <= n; i++) {
         cin >> a;
         l2.inserare_individuala(a);
-
-        l3 = listmanager + l2;
-        l3.output_list();
     }
+
+    l3 = listmanager + l2;
+    l3.output_list();
 }

@@ -1,5 +1,4 @@
 #include <fstream>
-#include <iostream>
 
 using namespace std;
 
@@ -15,10 +14,10 @@ class lista_operator {
         lista_operator(const lista_operator &obj);
         //Destructor
         ~lista_operator();
-        //Operator +
-        lista_operator operator + (const lista_operator &l2);
         //Operator -
         lista_operator operator - (const lista_operator &l2);
+        //Operator +
+        lista_operator operator + (const lista_operator &l2);
 
         //Inserare individuala
         void inserare_individuala(int);

@@ -158,6 +158,8 @@ void apelare_supraincarcare1() {
 
     l3 = listmanager - l2;
     l3.output_list();
+
+    cout << menu.returnmesage << "OK!" << '\n';
 }
 
 void apelare_supraincarcare2() {
@@ -175,4 +177,6 @@ void apelare_supraincarcare2() {
 
     l3 = listmanager + l2;
     l3.output_list();
+
+    cout << menu.returnmesage << "OK!" << '\n';
 }

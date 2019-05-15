@@ -21,6 +21,15 @@ lista_operator::lista_operator(const lista_operator &obj) {
 
 lista_operator::~lista_operator() {
     //Destructor
+
+    nod *curent = primul;
+    nod *todestroy;
+
+    while (curent != NULL) {
+        todestroy = curent;
+        curent = curent->urm;
+        delete(todestroy);
+    }
 }
 
 lista_operator lista_operator::operator - (const lista_operator& l2) {
